@@ -19,3 +19,14 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# NATIVE CHANGES: react-native-skia
+-keep class com.shopify.reactnative.skia.** { *; }
+
+# NATIVE CHANGES: react-native-device-info
+-keep class com.android.installreferrer.api.** {
+  *;
+}
+
+# NATIVE CHANGES: react-native-device-info
+-keep class com.google.android.gms.common.** {*;}

@@ -1,5 +1,7 @@
 package com.example.reactnativeintegrationtesting
 
+import android.os.Bundle; // NATIVE CHANGES: react-native-screens
+
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
@@ -13,6 +15,13 @@ class MyReactActivity : ReactActivity() {
      */
     override fun getMainComponentName(): String? {
         return "AppsMobile"
+    }
+
+    /**
+     * NATIVE CHANGES: for react-native-screens
+     */
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(null)
     }
 
     /**

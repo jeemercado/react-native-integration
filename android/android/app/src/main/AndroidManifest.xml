@@ -3,6 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:maxSdkVersion="28"/>
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30"/>
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" tools:remove="android:maxSdkVersion" />
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.BLUETOOTH" tools:remove="android:maxSdkVersion" />
+    <!-- NATIVE CHANGES: react-native-ble-manager -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
 
     <application
         android:name=".MainApplication"
@@ -14,6 +29,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReactNativeIntegrationTesting"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".MyReactActivity"

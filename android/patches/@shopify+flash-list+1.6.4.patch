@@ -1,0 +1,786 @@
+diff --git a/node_modules/@shopify/flash-list/android/build.gradle b/node_modules/@shopify/flash-list/android/build.gradle
+index bed08cd..a8ae2db 100644
+--- a/node_modules/@shopify/flash-list/android/build.gradle
++++ b/node_modules/@shopify/flash-list/android/build.gradle
+@@ -27,6 +27,7 @@ buildscript {
+ }
+ 
+ android {
++    namespace "com.shopify.reactnative.flash_list"
+     compileSdkVersion _compileSdkVersion
+     buildToolsVersion _buildToolsVersion
+ 
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/1f08835c43f13b8b7d970d7ac3114400/results.bin b/node_modules/@shopify/flash-list/android/build/.transforms/1f08835c43f13b8b7d970d7ac3114400/results.bin
+new file mode 100644
+index 0000000..1ed65e0
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/.transforms/1f08835c43f13b8b7d970d7ac3114400/results.bin
+@@ -0,0 +1 @@
++i/
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/results.bin b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/results.bin
+new file mode 100644
+index 0000000..5ff383e
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/results.bin
+@@ -0,0 +1 @@
++o/debug
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.dex
+new file mode 100644
+index 0000000..2798d66
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.dex
+new file mode 100644
+index 0000000..52e7041
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutView.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutView.dex
+new file mode 100644
+index 0000000..e0e535e
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutView.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.dex
+new file mode 100644
+index 0000000..d384088
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.dex
+new file mode 100644
+index 0000000..164c146
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/BuildConfig.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/BuildConfig.dex
+new file mode 100644
+index 0000000..5b82a05
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/BuildConfig.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainer.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainer.dex
+new file mode 100644
+index 0000000..63bd895
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainer.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerImpl.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerImpl.dex
+new file mode 100644
+index 0000000..36292dc
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerImpl.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.dex
+new file mode 100644
+index 0000000..86825f0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerManager.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerManager.dex
+new file mode 100644
+index 0000000..24ad514
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/CellContainerManager.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.dex b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.dex
+new file mode 100644
+index 0000000..7c22482
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.dex differ
+diff --git a/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/desugar_graph.bin b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/desugar_graph.bin
+new file mode 100644
+index 0000000..601f245
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/.transforms/47583bf82cf76de50fbe7cdb741c5173/transformed/desugar_graph.bin differ
+diff --git a/node_modules/@shopify/flash-list/android/build/generated/source/buildConfig/debug/com/shopify/reactnative/flash_list/BuildConfig.java b/node_modules/@shopify/flash-list/android/build/generated/source/buildConfig/debug/com/shopify/reactnative/flash_list/BuildConfig.java
+new file mode 100644
+index 0000000..a57b19c
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/generated/source/buildConfig/debug/com/shopify/reactnative/flash_list/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.shopify.reactnative.flash_list;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "com.shopify.reactnative.flash_list";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml b/node_modules/@shopify/flash-list/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..7ac7323
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.shopify.reactnative.flash_list" >
++
++    <uses-sdk android:minSdkVersion="21" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json b/node_modules/@shopify/flash-list/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json
+new file mode 100644
+index 0000000..26dc774
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.shopify.reactnative.flash_list",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/aar_metadata/debug/aar-metadata.properties b/node_modules/@shopify/flash-list/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+new file mode 100644
+index 0000000..776557e
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+@@ -0,0 +1,5 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json b/node_modules/@shopify/flash-list/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/compile_library_classes_jar/debug/classes.jar b/node_modules/@shopify/flash-list/android/build/intermediates/compile_library_classes_jar/debug/classes.jar
+new file mode 100644
+index 0000000..7cdced7
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/compile_library_classes_jar/debug/classes.jar differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/compile_r_class_jar/debug/R.jar b/node_modules/@shopify/flash-list/android/build/intermediates/compile_r_class_jar/debug/R.jar
+new file mode 100644
+index 0000000..60f2461
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/compile_r_class_jar/debug/R.jar differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/compile_symbol_list/debug/R.txt b/node_modules/@shopify/flash-list/android/build/intermediates/compile_symbol_list/debug/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..7ee6871
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Sat Apr 06 12:51:04 PST 2024
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..337ff0c
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..ac7576d
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/debug/jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..46f3196
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/incremental/packageDebugAssets/merger.xml b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+new file mode 100644
+index 0000000..c6d325f
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/debug/assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/build/intermediates/shader_assets/debug/out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/javac/debug/classes/com/shopify/reactnative/flash_list/BuildConfig.class b/node_modules/@shopify/flash-list/android/build/intermediates/javac/debug/classes/com/shopify/reactnative/flash_list/BuildConfig.class
+new file mode 100644
+index 0000000..3041c15
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/javac/debug/classes/com/shopify/reactnative/flash_list/BuildConfig.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/javac/debug/classes/com/shopify/reactnative/flash_list/CellContainer.class b/node_modules/@shopify/flash-list/android/build/intermediates/javac/debug/classes/com/shopify/reactnative/flash_list/CellContainer.class
+new file mode 100644
+index 0000000..37386fd
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/javac/debug/classes/com/shopify/reactnative/flash_list/CellContainer.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/library_java_res/debug/res.jar b/node_modules/@shopify/flash-list/android/build/intermediates/library_java_res/debug/res.jar
+new file mode 100644
+index 0000000..ff4da65
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/library_java_res/debug/res.jar differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/local_only_symbol_list/debug/R-def.txt b/node_modules/@shopify/flash-list/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt b/node_modules/@shopify/flash-list/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..08ce843
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,8 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.shopify.reactnative.flash_list" >
++4
++5    <uses-sdk android:minSdkVersion="21" />
++5-->/Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++6
++7</manifest>
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml b/node_modules/@shopify/flash-list/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+new file mode 100644
+index 0000000..7ac7323
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.shopify.reactnative.flash_list" >
++
++    <uses-sdk android:minSdkVersion="21" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/navigation_json/debug/navigation.json b/node_modules/@shopify/flash-list/android/build/intermediates/navigation_json/debug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/navigation_json/debug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/META-INF/shopify_flash-list_debug.kotlin_module b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/META-INF/shopify_flash-list_debug.kotlin_module
+new file mode 100644
+index 0000000..1e9f2ca
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/META-INF/shopify_flash-list_debug.kotlin_module differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.class
+new file mode 100644
+index 0000000..c9e6af4
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.class
+new file mode 100644
+index 0000000..89123ff
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutView.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutView.class
+new file mode 100644
+index 0000000..f540932
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutView.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.class
+new file mode 100644
+index 0000000..fe359a3
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.class
+new file mode 100644
+index 0000000..38394cc
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/BuildConfig.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/BuildConfig.class
+new file mode 100644
+index 0000000..3041c15
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/BuildConfig.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainer.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainer.class
+new file mode 100644
+index 0000000..37386fd
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainer.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerImpl.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerImpl.class
+new file mode 100644
+index 0000000..a080063
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerImpl.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.class
+new file mode 100644
+index 0000000..e1d583b
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerManager.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerManager.class
+new file mode 100644
+index 0000000..5c01ef7
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/CellContainerManager.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.class b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.class
+new file mode 100644
+index 0000000..59846f1
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_dir/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar
+new file mode 100644
+index 0000000..80a752e
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar differ
+diff --git a/node_modules/@shopify/flash-list/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt b/node_modules/@shopify/flash-list/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+new file mode 100644
+index 0000000..4592df5
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+@@ -0,0 +1 @@
++com.shopify.reactnative.flash_list
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab
+new file mode 100644
+index 0000000..b839bf0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream
+new file mode 100644
+index 0000000..631975f
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len
+new file mode 100644
+index 0000000..67060ee
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len
+new file mode 100644
+index 0000000..9e27f73
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at
+new file mode 100644
+index 0000000..a4bb2ae
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i
+new file mode 100644
+index 0000000..cf67a76
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab
+new file mode 100644
+index 0000000..254eac4
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream
+new file mode 100644
+index 0000000..e032ee4
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len
+new file mode 100644
+index 0000000..93e68eb
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at
+new file mode 100644
+index 0000000..56876a5
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i
+new file mode 100644
+index 0000000..da04c21
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab
+new file mode 100644
+index 0000000..77ce037
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream
+new file mode 100644
+index 0000000..e032ee4
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len
+new file mode 100644
+index 0000000..93e68eb
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at
+new file mode 100644
+index 0000000..03498e5
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i
+new file mode 100644
+index 0000000..da04c21
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab
+new file mode 100644
+index 0000000..bd3e6e5
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream
+new file mode 100644
+index 0000000..1f84353
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len
+new file mode 100644
+index 0000000..a747334
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len
+new file mode 100644
+index 0000000..01bdaa1
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at
+new file mode 100644
+index 0000000..d4f3ed8
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i
+new file mode 100644
+index 0000000..9044d40
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/constants.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab
+new file mode 100644
+index 0000000..f657fcd
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream
+new file mode 100644
+index 0000000..0dd4239
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len
+new file mode 100644
+index 0000000..4ead2e8
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at
+new file mode 100644
+index 0000000..cc90184
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i
+new file mode 100644
+index 0000000..a972c97
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab
+new file mode 100644
+index 0000000..bdf584a
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream
+new file mode 100644
+index 0000000..2826686
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len
+new file mode 100644
+index 0000000..1c209ae
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len
+new file mode 100644
+index 0000000..2a17e6e
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at
+new file mode 100644
+index 0000000..094397e
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i
+new file mode 100644
+index 0000000..59037d8
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab
+new file mode 100644
+index 0000000..5ee2706
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream
+new file mode 100644
+index 0000000..eb880aa
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len
+new file mode 100644
+index 0000000..a3e4d23
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len
+new file mode 100644
+index 0000000..eb0b8a0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at
+new file mode 100644
+index 0000000..407fc8b
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i
+new file mode 100644
+index 0000000..14e9800
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab
+new file mode 100644
+index 0000000..be05906
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream
+new file mode 100644
+index 0000000..b7ccc96
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len
+new file mode 100644
+index 0000000..9114c77
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len
+new file mode 100644
+index 0000000..817b326
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at
+new file mode 100644
+index 0000000..5aaf537
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i
+new file mode 100644
+index 0000000..c1d85c3
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab
+new file mode 100644
+index 0000000..c4c48df
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream
+new file mode 100644
+index 0000000..0baa2e0
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len
+new file mode 100644
+index 0000000..b730b19
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len
+new file mode 100644
+index 0000000..93a595b
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at
+new file mode 100644
+index 0000000..d581e87
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i
+new file mode 100644
+index 0000000..ec15001
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab
+new file mode 100644
+index 0000000..3c6af9c
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream
+new file mode 100644
+index 0000000..8e98074
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len
+new file mode 100644
+index 0000000..f48fb3a
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len
+new file mode 100644
+index 0000000..ec8f944
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at
+new file mode 100644
+index 0000000..8b8c118
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i
+new file mode 100644
+index 0000000..ee4ffbb
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+new file mode 100644
+index 0000000..888a92d
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab
+@@ -0,0 +1,2 @@
++6
++0
+\ No newline at end of file
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab
+new file mode 100644
+index 0000000..96f0cde
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream
+new file mode 100644
+index 0000000..8f6d151
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len
+new file mode 100644
+index 0000000..67060ee
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len
+new file mode 100644
+index 0000000..9e27f73
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at
+new file mode 100644
+index 0000000..87c4282
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i
+new file mode 100644
+index 0000000..1434ce5
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab
+new file mode 100644
+index 0000000..156e380
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream
+new file mode 100644
+index 0000000..3d5fe7a
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len
+new file mode 100644
+index 0000000..fa902fa
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len
+new file mode 100644
+index 0000000..9e27f73
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at
+new file mode 100644
+index 0000000..d102b5c
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i
+new file mode 100644
+index 0000000..b7dc911
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab
+new file mode 100644
+index 0000000..b224518
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream
+new file mode 100644
+index 0000000..95f759e
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len
+new file mode 100644
+index 0000000..15819ca
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len
+new file mode 100644
+index 0000000..dbf2bb1
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at
+new file mode 100644
+index 0000000..f196e59
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i
+new file mode 100644
+index 0000000..5976a55
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len
+new file mode 100644
+index 0000000..131e265
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i.len differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin
+new file mode 100644
+index 0000000..e7b9fc4
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/cacheable/last-build.bin differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin
+new file mode 100644
+index 0000000..d4d6615
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin differ
+diff --git a/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin
+new file mode 100644
+index 0000000..4a8f204
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/kotlin/compileDebugKotlin/local-state/build-history.bin differ
+diff --git a/node_modules/@shopify/flash-list/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/@shopify/flash-list/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..eb4dff6
+--- /dev/null
++++ b/node_modules/@shopify/flash-list/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,25 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml:1:1-2:12
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml:1:1-2:12
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml:1:1-2:12
++	package
++		INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++		ADDED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml:1:1-2:12
++		INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml:1:11-69
++uses-sdk
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++		ADDED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++		INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++		ADDED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++		INJECTED from /Users/jee.mercado/Documents/personal/react-native-integration/android/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/@shopify/flash-list/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..5ea166d
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/META-INF/shopify_flash-list_debug.kotlin_module b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/META-INF/shopify_flash-list_debug.kotlin_module
+new file mode 100644
+index 0000000..1e9f2ca
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/META-INF/shopify_flash-list_debug.kotlin_module differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.class
+new file mode 100644
+index 0000000..c9e6af4
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutShadow.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.class
+new file mode 100644
+index 0000000..89123ff
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutView$fixLayout$$inlined$sortBy$1.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutView.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutView.class
+new file mode 100644
+index 0000000..f540932
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutView.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.class
+new file mode 100644
+index 0000000..fe359a3
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager$Companion.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.class
+new file mode 100644
+index 0000000..38394cc
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/AutoLayoutViewManager.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerImpl.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerImpl.class
+new file mode 100644
+index 0000000..a080063
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerImpl.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.class
+new file mode 100644
+index 0000000..e1d583b
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerManager$Companion.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerManager.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerManager.class
+new file mode 100644
+index 0000000..5c01ef7
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/CellContainerManager.class differ
+diff --git a/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.class b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.class
+new file mode 100644
+index 0000000..59846f1
+Binary files /dev/null and b/node_modules/@shopify/flash-list/android/build/tmp/kotlin-classes/debug/com/shopify/reactnative/flash_list/ReactNativeFlashListPackage.class differ
+diff --git a/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml b/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
+index 0d77c7a..a2f47b6 100644
+--- a/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
++++ b/node_modules/@shopify/flash-list/android/src/main/AndroidManifest.xml
+@@ -1,3 +1,2 @@
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+-          package="com.shopify.reactnative.flash_list">
++<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ </manifest>
